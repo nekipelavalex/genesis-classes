@@ -1,3 +1,54 @@
-div {
+@font-face{
+    font-family:'one';
+    src: url('../fonts/efn-handy.otf');
+}
+
+@font-face{
+    font-family:'two';
+    src: url('../fonts/pattaya-regular.ttf')
+}
+
+html{
+    /*font-family: 'Amatic SC', cursive; */
+    font-size: 16px;
+}
+
+h1 {
+    text-transform: uppercase;
     text-align: center;
+    font: 1.5rem 'one';
+}
+
+h2 {
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font: 1.5rem 'two';
+}
+
+img{
+    height: 200px;
+}
+
+div {
+    /*text-align: center;*/
+    width: 200px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol{
+    text-transform: capitalize;
+}
+
+table{
+    text-align: center;
+}
+
+th{
+    font-style: italic;
 }
