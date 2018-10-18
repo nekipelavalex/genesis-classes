@@ -9,7 +9,6 @@
 }
 
 html{
-    /*font-family: 'Amatic SC', cursive; */
     font-size: 16px;
 }
 
@@ -17,12 +16,14 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font: 1.5rem 'one';
+    color: goldenrod;
 }
 
 h2 {
     text-transform: capitalize;
     letter-spacing: 5px;
     font: 1.5rem 'two';
+    color: goldenrod;
 }
 
 img{
@@ -30,12 +31,8 @@ img{
 }
 
 div {
-    /*text-align: center;*/
-    width: 200px;
-    text-align: justify;
-    text-indent: 20px;
-    line-height: 2;
-}
+    text-align: center;
+    }
 
 a{
     text-decoration: none;
@@ -50,5 +47,7 @@ table{
 }
 
 th{
+    background-color: darkgray;
+    color: #ffffff;
     font-style: italic;
 }
