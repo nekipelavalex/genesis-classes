@@ -1,0 +1,31 @@
+@font-face{
+    font-family: 'coca-cola';
+    src: url('CocaCola.woff');
+}
+
+html, body{
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    line-height: 1rem;
+}
+
+img{
+    height: 200px;
+}
+span{
+    font: 40px 'coca-cola';
+}
+
+a{
+    font-family: 'coca-cola';
+    text-align: center;
+    margin-right: 20px;
+}
