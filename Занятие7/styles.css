@@ -22,10 +22,10 @@ img{
 }
 span{
     font: 40px 'coca-cola';
+    color: yellow;
 }
 
-a{
+pre, a{
     font-family: 'coca-cola';
     text-align: center;
-    margin-right: 20px;
 }
