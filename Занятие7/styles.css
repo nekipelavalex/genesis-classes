@@ -26,6 +26,7 @@ img[src="images/master.png"]{
     text-align: center;
     line-height: 1rem;
 }
+
 .first{
     background-image: url(images/bg-1.jpg);
 }
@@ -41,7 +42,7 @@ img[src="images/master.png"]{
 }
 
 .second{
-    background-image: url(images/bg-2.jpg);
+    background: radial-gradient( #ffffff,  #18577B);
 }
 
 .second-name{
@@ -57,16 +58,15 @@ img[src="images/master.png"]{
 .table{
     width: 500px;
     height: 500px;
-    border-collapse: collapse;
     border-spacing: 0;
 }
 
 tr:first-child td:first-child{
-    border-radius: 50px 0 0 0;
+    border-radius:50px 0px 0px 0px;
     border: 2px solid rebeccapurple;
 }
 
-tr:first-child td :last-child{
+tr:first-child td:last-child{
     border-radius: 0 50px 0 0;
     border: 2px solid rebeccapurple;
 }
