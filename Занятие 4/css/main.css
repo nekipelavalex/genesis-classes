@@ -5,11 +5,13 @@
 
 @font-face{
     font-family:'two';
-    src: url('../fonts/pattaya-regular.ttf')
+    src: url('../fonts/pattaya-regular.ttf');
 }
 
-html{
-    font-size: 16px;
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -32,7 +34,7 @@ img{
 
 div {
     text-align: center;
-    }
+}
 
 a{
     text-decoration: none;

@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'coca-cola';
+    src: url('CocaCola.woff');
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img[src="images/master.png"]{
+    height: 200px;
+}
+
+.paige{
+    font-family: 'coca-cola';
+    text-align: center;
+    margin-right: 20px;
+}
+
+.paige-size{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.first{
+    background-image: url(images/bg-1.jpg);
+}
+
+.first-name{
+    font: 40px 'coca-cola';
+    color: yellow;
+    text-align: center;
+}
+
+.first-text{
+    color:white;
+}
+
+.second{
+    background: radial-gradient( #ffffff,  #18577B);
+}
+
+.second-name{
+    font: 40px 'coca-cola';
+    color:goldenrod;
+    text-align: center;
+}
+
+.third{
+    background-image: url(images/bg-3.jpg);
+}
+
+.table{
+    width: 500px;
+    height: 500px;
+    border-spacing: 0;
+}
+
+tr:first-child td:first-child{
+    border-radius:50px 0px 0px 0px;
+    border: 2px solid rebeccapurple;
+}
+
+tr:first-child td:last-child{
+    border-radius: 0 50px 0 0;
+    border: 2px solid rebeccapurple;
+}
+
+tr:last-child td:first-child{
+    border-radius: 0 0 0 50px;
+    border: 2px solid rebeccapurple; 
+}
+
+tr:last-child td:last-child{
+    border-radius: 0 0 50px 0;
+    border: 2px solid rebeccapurple;
+}
