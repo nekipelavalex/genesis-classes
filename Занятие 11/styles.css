@@ -7,10 +7,14 @@
 
 html,
 body{
+    height: 100%;
 	margin: 0;
 	padding: 0; 
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     scroll-behavior: smooth;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
 }
 
 .menu {
@@ -39,6 +43,8 @@ body{
     display: inline-block;
     position: relative;
     width: 78px;
+    transition: 1s;
+    margin-left: -5px;
 }
 
 .menu a {
@@ -131,6 +137,7 @@ list-style: circle none;
 
 .content .text_block{
     padding-bottom: 30px;
+    transform: translate(-50px,50px) rotate(-25deg);
 }
 
 .page {
@@ -167,12 +174,13 @@ opacity: 0.5;
 }
 
 .footer{
-    position: ;
     left: 0;
     bottom: 0;
     padding: 30px;
     background-color:#808080;
     color:#fff;
+    flex-flow: row wrap;
+    align-content: flex-start;
 }
 
 .header-page h2{
@@ -180,24 +188,15 @@ opacity: 0.5;
 }
 
 .super_code{
-    /*column-count: 3;*/
+    column-count: 3;
     color: goldenrod;
     font-weight: 500;
     list-style-position: inside;
     text-align: left;
 }
 
-.table{
-    width: 100%;
-    margin-left: 28px;
-}
-
 .super_code .pp_super_code{
     margin-left: 62px;
-}
-
-td{
-    width: 30%;
 }
 
 .mask{

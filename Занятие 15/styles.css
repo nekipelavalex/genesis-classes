@@ -243,3 +243,7 @@ a {
         column-count: 1;
     }
 }
+
+.menu{
+    cursor: wait;
+}
