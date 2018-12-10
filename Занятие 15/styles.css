@@ -32,6 +32,7 @@ a {
     width: 100%;
     z-index: 10;
     height: 65px;
+    cursor: wait;
 }
 
 .menu ul {
@@ -102,7 +103,7 @@ a {
 
 .header a:hover{
     opacity: 1;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .block2 {
@@ -198,7 +199,7 @@ a {
     font-weight: bold;
 }
 
-.mask{
+/*.mask{
     position: absolute;
     z-index: 2;
     background-color: rgba(15, 146, 48, 0.25);
@@ -206,7 +207,7 @@ a {
     left: 0;
     top: 0;
     bottom: 0;
-}
+}*/
 
 @media screen and (max-width: 800px){
     .menu{
@@ -244,6 +245,103 @@ a {
     }
 }
 
-.menu{
-    cursor: wait;
+/** Анимация для заголовка главной страницы **/
+/*.header .content .title-h1,
+.header .content p,
+.scroll-to {
+    animation: change-opacity 2s linear;
+    animation-fill-mode: forwards;*/
+}
+
+.header .content .title-h1 {
+    animation-delay: 0s;
+}
+
+.header .content p {
+    animation-delay: 1s;
+}
+
+.scroll-to{
+    animation-delay: 2s;
+}
+
+/** Анимация для кнопки вниз **/
+.scroll-to{
+    border: 1px solid orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    overflow: hidden;
+}
+
+.scroll-to span{
+    color: #fff;
+    font-size: 30px;
+
+}
+
+span{
+    display: block;
+}
+
+.scroll-to .square{
+    animation: animation_one 2s linear   1;
+    color:red;
+    animation-iteration-count:infinite;
+    transition-timing-function: ease-out;
+}
+
+.header .container a{
+width: 50px;
+height: 50px;
+margin: 0 auto;
+}
+
+.square:hover {
+    
+    animation-play-state: paused;
+}
+
+@keyframes animation_one {
+    from {
+        transform:translateX(-30px);
+    }
+
+    to {
+        transform:translateX(15px) ;
+}
+}
+
+.header .content p,
+.header .content h1 {
+    animation: animation_text 2s linear 3;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.header .content p{
+    animation-delay: 1s;
+}
+
+@keyframes animation_text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.asd{
+    position: relative;
+}
+.qwerty{
+    position: absolute;
+    right: 50%;
+    bottom: 100px;  
+    background: #ffffff;
 }
