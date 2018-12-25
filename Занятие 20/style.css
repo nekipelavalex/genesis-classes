@@ -1,0 +1,94 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #ffffff;
+    scroll-behavior: auto;
+}
+/* header */
+header .container .row{
+    height: 105px;
+}
+
+header .container .row .col-md-2{
+    background: green;
+}
+
+header .container .row .col-md-6.offset-md-1{
+background: yellow;
+}
+
+header .container .row .col-md-2.offset-md-1{
+    background: red;
+}
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.header-search:after {content:""; clear:both; display:table}
+.header-search form {
+    width: auto;
+    margin-right: 30px;
+}
+
+.header-search input {
+    width: 540px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 1px solid grey;
+    background: #ffffff;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+
+.header-search input:focus {
+    width: 300px;
+}
+
+.header-search button {
+    width: 160px;
+    height: 42px;
+    background: none;
+    border-radius: 42px;
+    border: 1px solid grey;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+}
+
+.header-search button:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
+/* nav */
+
+nav.nav-color{
+    height: 55px;
+    background-color: gray;
+}
+
+nav.nav-color .container{
+    line-height: 50px;
+    font-size: 15px;
+}
+
+nav.nav-color .container .row a{
+    color: #ffffff;
+}
+
+section .container .buttom-more{
+    background-color: rgb(250, 112, 135);
+    width: 175px;
+    height: 42px;
+    border-radius: 42px;
+    border: 0px solid grey;color: #ffffff;
+}
