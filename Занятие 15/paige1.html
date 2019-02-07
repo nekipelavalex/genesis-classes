@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Paige1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="fixed-top">
+
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form id="data" action="http://temp-eti.tmweb.ru/taxi/mail.php" method="POST">
+            <input type="hidden" name="project_name" value="Site Name">
+            <input type="hidden" name="admin_email" value="bonia1991@gmail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <div>
+                Имя <input type="text" name="First_name">
+            </div>
+            <div>
+                Фамилия <input type="text" name="Last_name">
+            </div>
+            <div>
+                <input type="checkbox">
+            </div>
+        </form>
+        <select form="data">
+            <option value="man">Муж</option>
+            <option value="woman">Жен</option>
+            <option value="man-woman">Другое</option>
+        </select>
+        <br>
+        <button form="data">
+            Button
+        </button>
+        <br>
+        <div class="alert alert-primary" role="alert">
+            <a href="index.html" class="alert-link">Menu</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="fixed-bottom">
+            © 2001—2018 IT-академия GENESIS
+        </div>
+    </footer>
+</body>
+
+</html>

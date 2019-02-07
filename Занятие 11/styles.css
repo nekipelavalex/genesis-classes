@@ -1,0 +1,210 @@
+@font-face { 
+    font-family: 'CocaCola'; 
+    src: url('fonts/CocaCola.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+html,
+body{
+    height: 100%;
+	margin: 0;
+	padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.menu {
+    background-color: darkslateblue;
+    border-bottom: 4px solid green;
+    list-style-type: none;
+    list-style-position: outside;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.menu > li:first-child a{
+    background-color: green;
+}
+
+.menu li:hover{
+    background-color: green; 
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+    width: 78px;
+    transition: 1s;
+    margin-left: -5px;
+}
+
+.menu a {
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: -10px;    
+}
+
+.menu-block1 li a{
+    display: inline-block;
+}
+
+.menu li:hover .menu-block1{    
+    display: block;
+}
+
+.menu-block1{
+    position: absolute;
+    background-color: darkslateblue;
+    width: 78px;
+    display: none;
+}
+
+.menu-block1 li{
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li:hover ul{
+    display: none;
+}
+
+ul.menu li:hover > ul{
+    display: block;
+}
+
+ul.menu li ul.menu-block1p2{
+    position: absolute ;
+    background-color: darkslateblue;
+    top: 0;
+    left: 78px;
+}
+
+.cola-text {
+    font-family: 'CocaCola';
+    font-size: 30px;
+}
+
+ul{
+margin: 0px;
+padding: 0px;    
+list-style: circle none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content *{
+    z-index: 10;
+}
+
+.header-page {
+    min-height: 100vh;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.content{
+    color: white; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    justify-content: center;
+}
+
+.content .style_block{
+    color: rgb(159, 172, 177);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.content .text_block{
+    padding-bottom: 30px;
+    transform: translate(-50px,50px) rotate(-25deg);
+}
+
+.page {
+    min-height: 100vh;
+	background-color: #fff;
+    padding: 15px;
+}
+
+.page2 {
+    min-height: 80vh;
+	background-color: #fff;
+    padding: 15px;
+}
+
+#block2 .page-block2{
+    min-height: 100vh;
+    padding: 15px;
+}
+
+h2{
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 65px;
+}
+
+.container .text_block1 {
+    text-indent: 20px;
+}
+
+#block3 img{
+width: 100%;
+opacity: 0.5;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    background-color:#808080;
+    color:#fff;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.header-page h2{
+    padding-top: 80px;
+}
+
+.super_code{
+    column-count: 3;
+    color: goldenrod;
+    font-weight: 500;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.super_code .pp_super_code{
+    margin-left: 62px;
+}
+
+.mask{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(15, 146, 48, 0.25);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
